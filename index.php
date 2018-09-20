@@ -7,8 +7,56 @@ html, body {
 	color: #fff;
 	background-image: url(https://lunchaware.com/static/seals1.gif);
 }
+#body1 {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(/static/seals1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: stretch;
+  animation-duration: 10s; 
+  animation-timing: cubic-bezier(1,1,.1,0); 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    width: 10px;
+    height: 30px;
+    transform: rotate(1deg) scale(.3);
+    border-radius: 100%;
+  }
+  100% {
+    transform: rotate(-720deg) scale(1.5);
+    width: 100%;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@-webkit-keyframes rotationfirst {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(45deg);}   
+}
 * { box-sizing: border-box; }
 .video-background {
+  display: none;
   background-image:  url(https://lunchaware.com/static/seals1.gif);
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
@@ -88,7 +136,7 @@ img.thethirdbest {
 </style>
 </head>
 <body id="body">
-<div id="body1">
+<div id="body1"></div>
 <div id="vid" class="video-background">
 	<div class="">
 		<video loop muted autoplay poster="/static/moonwalk.gif" class="video-foreground">
