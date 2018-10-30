@@ -1,5 +1,14 @@
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127053279-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127053279-1');
+</script>
 <title>LunchAware</title>
 <style type="text/css">
 html, body {
@@ -185,6 +194,10 @@ img.thethirdbest {
 <tr>
 <td>Jonathan N.</td>
 <td>Thursday</td>
+</tr>
+<tr>
+<td>Jacob</td>
+<td>Buttsday</td>
 </tr>
 </table>
 </div>
