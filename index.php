@@ -85,7 +85,16 @@ body {
     color: #fff;
     z-index: 1;
 }
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
+}
 .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
 .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
 @media (min-aspect-ratio: 16/9) {
@@ -95,8 +104,8 @@ body {
   .video-foreground { width: 300%; left: -100%; }
 }
 @media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
+    .vid-info { margin-top: 100vh; width: 100%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
 }
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
@@ -134,7 +143,16 @@ img.thethirdbest {
     0%  {-webkit-transform: rotate(-270deg);}
     100% {-webkit-transform: rotate(270deg);}
 }
- 
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,9 +217,13 @@ img.thethirdbest {
 <td>Jacob</td>
 <td>Buttsday</td>
 </tr>
+<tr>
+<td>Jade</td>
+<td>March, 1944</td>
+</tr>
 </table>
 </div>
-<!-- Looking at the source?  Great! -->
+<!-- Looking at the source?  Great!  Have a damn good day -->
 <br><br><br>
 <center>Visitor #:<br><h1 style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
 </div>
