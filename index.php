@@ -248,8 +248,15 @@ img.thethirdbest {
 <audio src="/static/adcc-6.m4a" autoplay loop></audio>
 <audio src="/static/adcc-8.m4a" autoplay loop></audio>
 -->
-<audio src="/static/lil.m4a" autoplay loop></audio>
-<audio src="/static/lil2.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-2.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-3.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-4.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-5.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-6.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-7.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-8.m4a" autoplay loop></audio>
+<audio src="/static/cowboy-hats-9.m4a" autoplay loop></audio>
 
 
 <!--<iframe width="1" height="1" src="https://www.youtube.com/embed/pAgnJDJN4VA?start=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
