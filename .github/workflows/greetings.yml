@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hey you made an issue, that''s neat'
+        pr-message: 'Are you adding yourself to the guestbook? If so, you need to accompany that with a change to make lunchaware more bettererer. If this is already a commit to make it more bettererererer, add yourself to the guest book.'
