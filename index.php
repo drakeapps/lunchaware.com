@@ -225,6 +225,11 @@ img.thethirdbest {
 <td>Henna</td>
 <td>#2020</td>
 </tr>
+<tr>
+<td>Marissa</td>
+<td>MONDAY, FEBRUARY 10TH 2020</td>
+</tr>
+<tr>
 </table>
 </div>
 <!-- Looking at the source?  Great!  Have a damn good day -->
