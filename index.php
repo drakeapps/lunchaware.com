@@ -227,7 +227,7 @@ img.thethirdbest {
 </tr>
 <tr>
 <td>Marissa</td>
-<td>MONDAY, FEBRUARY 10TH 2020</td>
+<td>January Trumpteenth, Twentymemeteen</td>
 </tr>
 </table>
 </div>
