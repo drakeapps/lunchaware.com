@@ -20,7 +20,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  background-image: url(/static/seals1.gif);
+  background-image: url(/static/patrick.gif);
   background-repeat: no-repeat;
   background-size: cover;
   animation-name: stretch;
