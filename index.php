@@ -1,5 +1,26 @@
 <html>
 <head>
+	<meta name="keywords" content="lunchaware,lunchaware,lunchaware,lunchaware,lunchaware,lunch,aware,lunchaware" />
+	   <meta property="og:title" content="LunchAware">
+    <meta name="twitter:title" content="LunchAware">
+	    <meta name="twitter:card" content="summary">
+     <meta name="twitter:site" content="@drakeapps">
+    						     			 		 		 			 	<meta name="twitter:creator" content="@drakeapps">
+    	  <meta name="description" content="Order your exclusive LunchAware before it runs away!">
+ <meta name="og:description" content="Order your exclusive LunchAware before it runs away!">
+    <meta name="twitter:description" content="Order your exclusive LunchAware before it runs away!">
+   	 <meta property="og:url" content="https://lunchaware.com">
+    <meta property="og:site_name" content="lunchaware.com">
+      <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US" />
+   <meta name="article:author" content="lunchaware">
+    <meta property="article:published_time" content="1971-10-22">
+    <meta name="article:modified_time" content="2031-02-29">
+	
+	
+	
+	
+	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127053279-1"></script>
 <script>
@@ -155,7 +176,12 @@ img.thethirdbest {
 
 
 
-
+ 
+	
+				
+	 
+		
+	  
 
 
 
