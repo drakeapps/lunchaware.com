@@ -4,8 +4,8 @@
 	   <meta property="og:title" content="LunchAware">
     <meta name="twitter:title" content="LunchAware">
 	    <meta name="twitter:card" content="summary">
-     <meta name="twitter:site" content="@drakeapps">
-    						     			 		 		 			 	<meta name="twitter:creator" content="@drakeapps">
+     <meta name="twitter:site" content="@MrsOldGregg">
+    						     			 		 		 			 	<meta name="twitter:creator" content="@MrsOldGregg">
     	  <meta name="description" content="Order your exclusive LunchAware before it runs away!">
  <meta name="og:description" content="Order your exclusive LunchAware before it runs away!">
     <meta name="twitter:description" content="Order your exclusive LunchAware before it runs away!">
@@ -16,7 +16,9 @@
    <meta name="article:author" content="lunchaware">
     <meta property="article:published_time" content="1971-10-22">
     <meta name="article:modified_time" content="2031-02-29">
-	
+	    <meta property="og:image" content="/static/boombox.png" />
+	         <meta property="twitter:image" content="/static/boombox.png" />
+
 	
 	
 	
