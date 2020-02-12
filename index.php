@@ -244,6 +244,7 @@ img.thethirdbest {
 </div>
 <!-- Looking at the source?  Great!  Have a damn good day -->
 <!-- Looking to apply? Submit JSON to https://lunchaware.com/apply.php?data= -->
+<!-- Looking for bh? Submit anything to https://jmthornton.net/tools/bh?data= -->
 <br><br><br>
 <center>Visitor #:<br><h1 style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
 </div>
