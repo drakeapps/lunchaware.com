@@ -233,7 +233,7 @@ img.thethirdbest {
 <td>#2020</td>
 </tr>
 <tr>
-<td>marissuhhhh</td>
+<td>Marissa</td>
 <td>January Trumpteenth, Twentymemeteen</td>
 </tr>
 <tr>
@@ -243,6 +243,7 @@ img.thethirdbest {
 </table>
 </div>
 <!-- Looking at the source?  Great!  Have a damn good day -->
+<!-- Looking to apply? Submit JSON to https://lunchaware.com/apply.php?data= -->
 <br><br><br>
 <center>Visitor #:<br><h1 style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
 </div>
