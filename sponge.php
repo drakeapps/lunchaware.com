@@ -18,7 +18,7 @@ foreach ($text as $char) {
   }
 }
 
-print("<".$_POST['user_name']."> ".$sponge);
+print($sponge);
 
 
 ?>
