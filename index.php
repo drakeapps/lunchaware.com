@@ -16,8 +16,8 @@
    <meta name="article:author" content="lunchaware">
     <meta property="article:published_time" content="1971-10-22">
     <meta name="article:modified_time" content="2031-02-29">
-	    <meta property="og:image" content="https://lunchaware.com/static/seals1.gif" />
-	         <meta property="twitter:image" content="https://lunchaware.com/static/seals1.gif" />
+	    <meta property="og:image" content="https://lunchaware.com/static/patrick.gif" />
+	         <meta property="twitter:image" content="https://lunchaware.com/static/patrick.gif" />
 
 	
 	
