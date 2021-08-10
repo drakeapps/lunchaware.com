@@ -19,7 +19,10 @@
 	    <meta property="og:image" content="https://lunchaware.com/static/patrick.gif" />
 	         <meta property="twitter:image" content="https://lunchaware.com/static/patrick.gif" />
 
-	
+
+
+
+
 	
 	
 	
@@ -493,3 +496,4 @@ var weird = new Konami(function() {
 	_weirdDiv.setAttribute('class', 'weird-video-background');
 });
 </script>
+<script src="/trail.js" defer></script>
