@@ -496,4 +496,4 @@ var weird = new Konami(function() {
 	_weirdDiv.setAttribute('class', 'weird-video-background');
 });
 </script>
-<script src="/static/trail.js" defer></script>
+<script src="/static/trail.js?butts" defer></script>
