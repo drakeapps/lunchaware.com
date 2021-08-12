@@ -7,7 +7,7 @@ function getOrCreateCanvas() {
   c.id = 'trail-canvas';
   c.width = window.innerWidth;
   c.height = window.innerHeight
-  c.style.zIndex = '-99';
+  c.style.zIndex = '0';
   c.style.position = 'fixed';
   c.style.top = '0';
   c.style.left = '0';
