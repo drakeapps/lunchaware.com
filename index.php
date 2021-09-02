@@ -76,6 +76,9 @@ body,
 html {
   height: 100%;
   margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 body {
@@ -84,6 +87,12 @@ body {
   justify-content: center;
 }
 
+.marquee {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
 
 @-webkit-keyframes rotationfirst {
     0%  {-webkit-transform: rotate(0deg);}
@@ -200,6 +209,12 @@ img.thethirdbest {
 </style>
 </head>
 <body id="body">
+<div class="marquee">
+
+  <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&autoplay=1&modestbranding=1&controls=0"
+  frameborder="0"></iframe>
+</div>
 <div id="weird"></div>
 <div id="body1"></div>
 <div id="vid" class="video-background">
@@ -287,12 +302,7 @@ img.thethirdbest {
     <img class="thethirdbest" src="/static/nyangif.gif">
     </marquee>
 </div>
-<div class="marquee">
 
-  <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&autoplay=1&modestbranding=1&controls=0"
-  frameborder="0"></iframe>
-</div>
 
 </div>
 
