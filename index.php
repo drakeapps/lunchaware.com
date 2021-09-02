@@ -287,17 +287,23 @@ img.thethirdbest {
     <img class="thethirdbest" src="/static/nyangif.gif">
     </marquee>
 </div>
+<div class="marquee">
+
+  <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&autoplay=1&modestbranding=1&controls=0"
+  frameborder="0"></iframe>
+</div>
 
 </div>
 
 <!--
 <audio src="/static/nyan.m4a"  autoplay loop></audio>
 -->
-
+<!--
 								<audio src="/static/lil.m4a" autoplay loop></audio>
 								<audio src="/static/lil1.m4a" autoplay loop></audio>
 								<audio src="/static/lil2.m4a" autoplay loop></audio>
-
+-->
 <!--
 <audio src="/static/adcc.m4a" autoplay loop></audio>
 <audio src="/static/adcc-2.m4a" autoplay loop></audio>
@@ -319,6 +325,7 @@ img.thethirdbest {
 <!--<iframe width="1" height="1" src="https://www.youtube.com/embed/pAgnJDJN4VA?start=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <iframe width="1" height="1" src="https://www.youtube.com/embed/pAgnJDJN4VA?start=3&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <iframe width="1" height="1" src="https://www.youtube.com/embed/pAgnJDJN4VA?start=5&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 const body = document.getElementById('vid');
 let rotation = 0;
@@ -339,6 +346,82 @@ let rotation1 = 0;
 setInterval(() => thebest.style.transform = `rotate(${rotation1++}deg)`, 25);
 
 
+(function ($, window, undefined) {
+	$.fn.marqueeify = function (options) {
+		var settings = $.extend({
+			horizontal: true,
+			vertical: true,
+			speed: 100, // In pixels per second
+			container: $(this).parent(),
+			bumpEdge: function () {}
+		}, options);
+		
+		return this.each(function () {
+			var containerWidth, containerHeight, elWidth, elHeight, move, getSizes,
+				$el = $(this);
+
+			getSizes = function () {
+				containerWidth = settings.container.outerWidth();
+				containerHeight = settings.container.outerHeight();
+				elWidth = $el.outerWidth();
+				elHeight = $el.outerHeight();
+			};
+
+			move = {
+				right: function () {
+					$el.animate({left: (containerWidth - elWidth)}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+						settings.bumpEdge();
+						move.left();
+					}});
+				},
+				left: function () {
+					$el.animate({left: 0}, {duration: ((containerWidth/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+						settings.bumpEdge();
+						move.right();
+					}});
+				},
+				down: function () {
+					$el.animate({top: (containerHeight - elHeight)}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+						settings.bumpEdge();
+						move.up();
+					}});
+				},
+				up: function () {
+					$el.animate({top: 0}, {duration: ((containerHeight/settings.speed) * 1000), queue: false, easing: "linear", complete: function () {
+						settings.bumpEdge();
+						move.down();
+					}});
+				}
+			};
+
+			getSizes();
+
+			if (settings.horizontal) {
+				move.right();
+			}
+			if (settings.vertical) {
+				move.down();
+			}
+
+      // Make that shit responsive!
+      $(window).resize( function() {
+        getSizes();
+      });
+		});
+	};
+})(jQuery, window);
+
+$(document).ready( function() {
+
+	$('.marquee').marqueeify({
+		speed: 300,
+		bumpEdge: function () {
+			var newColor = "hsl(" + Math.floor(Math.random()*360) + ", 100%, 50%)";
+			$('.marquee .logo').css('fill', newColor);
+		}
+	});
+});	
+	
 /*
  * Konami-JS ~
  * :: Now with support for touch events and multiple instances for
