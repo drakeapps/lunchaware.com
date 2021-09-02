@@ -212,7 +212,7 @@ img.thethirdbest {
 <div class="marquee">
 
   <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&autoplay=1&modestbranding=1&controls=0"
+  src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&amp;autoplay=1&amp;modestbranding=1&amp;controls=0&amp;loop=1&amp;index=<?=rand(0,200)?>"
   frameborder="0"></iframe>
 </div>
 <div id="weird"></div>
