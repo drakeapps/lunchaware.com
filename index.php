@@ -286,6 +286,10 @@ img.thethirdbest {
 <td>ANJU</td>
 <td>BUTTSDAY 2: THE REBUTTSENING</td>
 </tr>
+<tr>
+<td>Haley</td>
+<td>onsdag</td>
+</tr>
 </table>
 </div>
 <!-- Looking at the source?  Great!  Have a damn good day -->
