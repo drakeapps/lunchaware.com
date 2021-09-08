@@ -185,6 +185,55 @@ img.thethirdbest {
     100% {-webkit-transform: rotate(270deg);}
 }
 
+.animated {
+  animation-fill-mode: both;
+}
+
+/**
+ * Intensifies
+ * - Slowly increases in shaking and madness
+ */
+
+@keyframes intensifies {
+
+  @for $i from 0 through 100 {
+    
+    #{$i * 1%} {
+
+      // Rotate between left and right
+      $sign: -1;
+      @if $i % 2 == 0 { 
+        $sign: 1;
+      }
+
+      // Rotation capped at 8
+      $rotation: 8;
+      @if $i < 10 { 
+        $rotation: $i;
+      }
+
+
+
+      // Final frame is set back to 0
+      @if $i != 100 { 
+        transform:  translate($sign * random($i + 1) * 1px, $sign * random($i + 1) * 1px) scale(1 + $i / 50);
+      } @else {
+
+        transform: translate(0, 0) rotate(0deg);
+      }
+      
+    } 
+  }
+
+}
+
+.intensifies {
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  animation-name: intensifies;
+  animation-duration: 5s;
+}
+
 
 
 
@@ -296,7 +345,7 @@ img.thethirdbest {
 <!-- Looking to apply? Submit JSON to https://lunchaware.com/apply.php?data= -->
 <!-- Looking for bh? Submit anything to https://jmthornton.net/tools/bh?data= -->
 <br><br><br>
-<center>Visitor #:<br><h1 style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
+<center>Visitor #:<br><h1 class="intensifies" style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
 </div>
 </div>
 <div id="thebestcontainer">
