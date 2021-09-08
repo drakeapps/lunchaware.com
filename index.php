@@ -345,7 +345,7 @@ img.thethirdbest {
 <!-- Looking to apply? Submit JSON to https://lunchaware.com/apply.php?data= -->
 <!-- Looking for bh? Submit anything to https://jmthornton.net/tools/bh?data= -->
 <br><br><br>
-<center>Visitor #:<br><h1 class="intensifies" style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
+<center>Visitor #:<br><h1 class="animated intensifies" style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
 </div>
 </div>
 <div id="thebestcontainer">
