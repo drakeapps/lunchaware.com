@@ -18,6 +18,7 @@
     <meta name="article:modified_time" content="2031-02-29">
 	    <meta property="og:image" content="https://lunchaware.com/static/patrick.gif" />
 	         <meta property="twitter:image" content="https://lunchaware.com/static/patrick.gif" />
+             <link rel="stylesheet" type="text/css" href="/static/fireworks.css" media="screen" />
 
 
 
@@ -283,8 +284,8 @@ img.thethirdbest {
 <td>January Trumpteenth, Twentymemeteen</td>
 </tr>
 <tr>
-<td>ANJU</td>
-<td>BUTTSDAY 2: THE REBUTTSENING</td>
+<td>Anju</td>
+<td>Buttsday 2: Electric Boogaloo</td>
 </tr>
 </table>
 </div>
@@ -303,7 +304,11 @@ img.thethirdbest {
     </marquee>
 </div>
 
-
+<div id="fireworks-template">
+    <div id="fw" class="firework"></div>
+    <div id="fp" class="fireworkParticle"><img src="/static/particles.gif" alt="" /></div>
+</div>
+<div id="fireContainer"></div>
 </div>
 
 <!--
@@ -588,5 +593,20 @@ var weird = new Konami(function() {
 	var _weirdDiv = document.getElementById('weird');
 	_weirdDiv.setAttribute('class', 'weird-video-background');
 });
+
+$(function() {
+    $(window).on('click', function() {
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+        createFirework(25,187,5,1,null,null,null,null,false,true);
+    })
+})
 </script>
 <script src="/static/trail.js?butts" defer></script>
+<script src="static/snowstormv144_20131208/lights/soundmanager2-nodebug-jsmin.js"></script>
+<script src="/static/fireworks.js"></script>
