@@ -608,5 +608,5 @@ $(function() {
 })
 </script>
 <script src="/static/trail.js?butts" defer></script>
-<script src="/static/soundmanager2-nodebug-jsmin.js"></script>
+<script src="static/snowstormv144_20131208/lights/soundmanager2-nodebug-jsmin.js"></script>
 <script src="/static/fireworks.js"></script>

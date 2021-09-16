@@ -585,7 +585,7 @@ soundManager.onready(function() {
     if (sounds.hasOwnProperty(item)) {
       soundManager.createSound({
         id: item,
-        url: 'audio/' + sounds[item],
+        url: 'static/swf/' + sounds[item],
         autoLoad: true
       });
     }
