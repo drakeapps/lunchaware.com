@@ -280,6 +280,10 @@ img.thethirdbest {
 <td>#2020</td>
 </tr>
 <tr>
+<td>Captain Dick</td>
+<td>Howdy hi hey hey</td>
+</tr>
+<tr>
 <td>Marissa</td>
 <td>January Trumpteenth, Twentymemeteen</td>
 </tr>
