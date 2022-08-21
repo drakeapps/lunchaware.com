@@ -1,0 +1,28 @@
+{
+  "name": "lunchaware.com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "build-url": "parcel build index.html --public-url=https://lunchaware.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drakeapps/lunchaware.com.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drakeapps/lunchaware.com/issues"
+  },
+  "homepage": "https://github.com/drakeapps/lunchaware.com#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.3"
+  }
+}
