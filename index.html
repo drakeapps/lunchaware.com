@@ -12,13 +12,13 @@
    	 <meta property="og:url" content="https://lunchaware.com">
     <meta property="og:site_name" content="lunchaware.com">
       <meta property="og:type" content="article">
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_US" />stat
    <meta name="article:author" content="lunchaware">
     <meta property="article:published_time" content="1971-10-22">
     <meta name="article:modified_time" content="2031-02-29">
-	    <meta property="og:image" content="https://lunchaware.com/static/patrick.gif" />
-	         <meta property="twitter:image" content="https://lunchaware.com/static/patrick.gif" />
-             <link rel="stylesheet" type="text/css" href="/static/fireworks.css" media="screen" />
+	    <meta property="og:image" content="./static/patrick.gif" />
+	         <meta property="twitter:image" content="./static/patrick.gif" />
+             <link rel="stylesheet" type="text/css" href="./static/fireworks.css" media="screen" />
 
 
 
@@ -39,9 +39,9 @@
 <title>LunchAware</title>
 <style type="text/css">
 html, body {
-	cursor: url(https://lunchaware.com/static/boombox-cursor.png), auto;
+	cursor: url(./static/boombox-cursor.png), auto;
 	color: #fff;
-	background-image: url(https://lunchaware.com/static/seals1.gif);
+	background-image: url(./static/seals1.gif);
 }
 #body1 {
   height: 100%;
@@ -101,14 +101,14 @@ body {
 }
 * { box-sizing: border-box; }
 .weird-video-background {
-  background-image:  url(https://lunchaware.com/static/weird.gif);
+  background-image:  url(./static/weird.gif);
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: 9999999;
 }
 .video-background {
   display: none;
-  background-image:  url(https://lunchaware.com/static/seals1.gif);
+  background-image:  url(./static/seals1.gif);
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: 0;
@@ -210,11 +210,14 @@ img.thethirdbest {
 </style>
 </head>
 <body id="body">
-<div class="marquee">
-
-  <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&amp;autoplay=1&amp;modestbranding=1&amp;controls=0&amp;loop=1&amp;index=<?=rand(0,200)?>"
-  frameborder="0"></iframe>
+<div class="marquee" style="z-index:9999999;">
+    <script>
+        // bruh
+        const pickedVideo = Math.floor(Math.random()*200);
+        document.write(`<iframe id="ytplayer" type="text/html" width="640" height="360"
+            src="https://www.youtube.com/embed?listType=playlist&list=PLT9zNeDak1dEHOX6tyf35KTpK_UO4R6zg&amp;autoplay=1&amp;modestbranding=1&amp;controls=1&amp;loop=1&amp;mute=1&amp;index=${pickedVideo}"
+            frameborder="0"></iframe>`);
+    </script>
 </div>
 <div id="weird"></div>
 <div id="body1"></div>
@@ -250,10 +253,6 @@ img.thethirdbest {
 <tr>
 <td>Jon C.</td>
 <td>Thursday</td>
-</tr>
-<tr>
-<td>Daniel B.</td>
-<td>Saturday</td>
 </tr>
 <tr>
 <td>Philip</td>
@@ -293,7 +292,7 @@ img.thethirdbest {
 <!-- Looking to apply? Submit JSON to https://lunchaware.com/apply.php?data= -->
 <!-- Looking for bh? Submit anything to https://jmthornton.net/tools/bh?data= -->
 <br><br><br>
-<center>Visitor #:<br><h1 style="color: e3b00b;"><?=rand(-100000000, 100000000)/10.0 ?></h1></center>
+<center>Visitor #:<br><h1 style="color: e3b00b;"><script>document.write(((Math.random() * 200000000 - 100000000)/10.0).toFixed(2))</script></h1></center>
 </div>
 </div>
 <div id="thebestcontainer">
